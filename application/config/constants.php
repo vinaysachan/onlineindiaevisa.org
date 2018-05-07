@@ -133,7 +133,7 @@ define('ADMIN_EMAIL1', 'vnyscn@gmail.com');
 define('ADMIN_EMAIL2', 'vinaysachan@live.in');
 
 
-define('CONTACT_EMAIL1', 'contact@e-touristindiavisa.org');
-define('CONTACT_EMAIL2', 'info@e-touristindiavisa.org');
-define('CONTACT_NO1', '+91 8527661900');
-define('CONTACT_NO_UK', '08000015744');
+define('CONTACT_EMAIL1', 'CONTACT_EMAIL1');
+define('CONTACT_EMAIL2', 'CONTACT_EMAIL2');
+define('CONTACT_NO1', 'CONTACT_NO1');
+define('CONTACT_NO_UK', 'CONTACT_NO2');

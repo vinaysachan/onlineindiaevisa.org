@@ -70,6 +70,10 @@ class Operation_model extends CORE_Model {
             'email'                 =>  $data['email'],
         ];
         $photo                  =   $this->util->fileUpload(ADMIN_PHOTO_PATH, 'photo', $data['name'], 'jpeg|jpg|png');
+        if(!empty($photo['error'])) {
+            $this->session->set_flashdata(ERROR_MSG, $photo['error']);
+            redirect(base_url('admin/home/my_profile'));
+        }
         if ($photo) {
             $update_arr['img']  =   $photo;
             //unlink old photo

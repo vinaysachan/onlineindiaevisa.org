@@ -20,5 +20,5 @@ define('TBL_APPLICATION_TYPE', 'application_type');
 define('TBL_COUNTRY', 'country');
 define('TBL_ARRIVAL_PORT', 'arrival_port');
 define('TBL_SETTING', 'setting');
-
+define('TBL_ERROR', 'error');
 

@@ -8,9 +8,6 @@ $(function () {
             $.post($(form).attr('action'), $(form).serialize(), function (o) {
                 if (o.sts == 'success') {
                     window.location.href = o.url;
-//                    $.alert({title: 'Congratulations!', content: o.msg, confirm: function () {
-//                            window.location.href = o.url;
-//                        }});
                 } else {
                     $.alert({title: 'Sorry!', content: o.msg});
                 }

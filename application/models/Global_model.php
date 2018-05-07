@@ -18,6 +18,11 @@ class Global_model extends CORE_Model {
             return TRUE;
         return FALSE;
     }
+    
+    
+    public function saveErrorLogs($data) {
+        $this->db->insert(TBL_ERROR, ['data' => json_encode($data)]);
+    }
 
     public function getEnqs($offset = NULL, $limit = NULL, $count = NULL, $status = STATUS_IN_ACTIVE) {
         $this->db->select();
