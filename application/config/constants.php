@@ -134,6 +134,6 @@ define('ADMIN_EMAIL2', 'vinaysachan@live.in');
 
 
 define('CONTACT_EMAIL1', 'info@onlineindiaevisa.org');
-define('CONTACT_EMAIL2', 'CONTACT_EMAIL2');
+define('CONTACT_EMAIL2', 'contact@onlineindiaevisa.org');
 define('CONTACT_NO1', 'CONTACT_NO1');
 define('CONTACT_NO_UK', 'CONTACT_NO2');
