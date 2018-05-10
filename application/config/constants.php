@@ -87,8 +87,8 @@ defined('EXIT__AUTO_MAX') OR define('EXIT__AUTO_MAX', 125); // highest automatic
 
 
 
-define('SITE_NAME', 'E-TouristIndiaVisa');
-define('SITE_MIN_NAME', 'ETVISA');
+define('SITE_NAME', 'Online India E-Visa');
+define('SITE_MIN_NAME', 'EVISA');
 /* Project Enc Keys */
 define('HASH_PASSWORD_KEY', 'ABDJ5345345BMNM,XC32487236423');
 define('HASH_MYSQL_KEY', 'KVL42EPMDWMQTB5644ONOJYCC8350US5');
