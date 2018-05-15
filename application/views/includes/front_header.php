@@ -10,7 +10,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
             </button>
             <div class="col-12 fs12">
-                <span><img src="<?= base_url('public/img/in.png') ?>" class="mr20" >UK  <?= CONTACT_NO1 ?></span>
+                <span><img src="<?= base_url('public/img/in.png') ?>" class="mr20" >IND <?= CONTACT_NO1 ?></span>
                 <span class="ml25"><i class="fa fa-envelope fs20 mr10"></i><?= CONTACT_EMAIL1 ?></span>
             </div>
 
