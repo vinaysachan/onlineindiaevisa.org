@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <?php /* Meta Header */ $this->load->view('includes/meta_header'); ?>
+        <?php /* Google Analytics */ $this->load->view('analyticstracking'); ?>
     </head>
     <body class="">
-        <?php /* Google Analytics */ $this->load->view('analyticstracking'); ?>
         <?php /* Top Menu */ $this->load->view('includes/front_header'); ?>
         <?php /* Top Haeder Part */ $this->load->view('includes/header'); ?>
         <div class="">
