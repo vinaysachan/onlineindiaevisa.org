@@ -125,15 +125,12 @@ define('CAPTCHA_PATH', './uploads/captcha/');
 
 define('SETTING_FORM_BANNER', 'form_banner');
 
+define('PAY_PAL_ACCOUNT', 'mkarya59@gmail.com');
 
-
-
-
-define('ADMIN_EMAIL1', 'vnyscn@gmail.com');
-define('ADMIN_EMAIL2', 'vinaysachan@live.in');
-
+define('ADMIN_EMAIL1', 'info@onlineindiaevisa.org');
+define('ADMIN_EMAIL2', 'admin@onlineindiaevisa.org');
 
 define('CONTACT_EMAIL1', 'info@onlineindiaevisa.org');
 define('CONTACT_EMAIL2', 'contact@onlineindiaevisa.org');
-define('CONTACT_NO1', 'CONTACT_NO1');
+define('CONTACT_NO1', '+918802085751');
 define('CONTACT_NO_UK', 'CONTACT_NO2');

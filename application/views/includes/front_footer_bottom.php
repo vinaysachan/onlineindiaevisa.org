@@ -18,7 +18,7 @@
                         endif;
                         ?>
                     </ul>
-                     <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=q7JusASCPbMlx4UAp3OkMoYCA35ueeUtNYUTdOQviKH4UActz065EsHc6GL0"></script></span>
+                     <!--<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=q7JusASCPbMlx4UAp3OkMoYCA35ueeUtNYUTdOQviKH4UActz065EsHc6GL0"></script></span>-->
                 </div>
             </div>
             <div class="col-sm-5">
