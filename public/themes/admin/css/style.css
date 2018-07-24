@@ -5715,4 +5715,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, in
 .paging_list a.paginate{
     color: inherit;
 }
+
+
+.content_box_count {
+    padding: 15px 0px;
+    border-bottom: solid 1px #D7D7D7;
+}
  
