@@ -233,6 +233,72 @@ class Setting_model extends CORE_Model {
             return TRUE;
         return FALSE;
     }
+    
+    public function save_blog($data) {
+        $this->db->cache_delete_all();
+        if ($this->db->insert(TBL_BLOG, $data))
+            return $this->db->insert_id();
+        return FALSE;
+    }
+    
+    public function update_blog($data, $id) {
+        $this->db->cache_delete_all();
+        if ($this->db->update(TBL_BLOG, $data, ['id' => $id]))
+            return TRUE;
+        return FALSE;
+    }
+    
+    public function check_blog($data,$blog_id=NULL) {
+        $msg = '';
+        $this->db->select();
+        $this->db->from(TBL_BLOG);
+        if (!empty($blog_id)) {
+            $this->db->where('id !=', $blog_id);
+        }
+        $where_au = '(slug = "'.$data['slug'].'" OR heading = "'.$data['slug'].'")';
+        $this->db->where($where_au);
+        $data =  $this->db->get()->result();
+        if (!empty($data)) {
+            $msg    = 'Blog Url , Blog Title or Heading already exist';
+        }
+        if(empty($msg)) {
+            return ['status' => STATUS_SUCCESS];
+        } else {
+            return ['status' => STATUS_ERROR, 'msg' => $msg];
+        }
+    }
+    
+    public function blog_data($bid) {
+        $sql = 'SELECT * FROM '.TBL_BLOG.' WHERE id = "' . $bid . '"';
+        if ($query = $this->db->query($sql)) {
+            return $query->result();
+        }
+        return FALSE;
+    }
+    
+    public function save_blog_content($bid,$contents) {
+        $data   = [] ;
+        foreach ($contents as $content) {
+            $data[]     =   [
+                'blog_id'   =>  $bid,
+                'type'      =>  $content['type'],
+                'content'   =>  $content['data'],
+                'order'     =>  $content['order']
+            ];
+        }
+        if(!empty($data)) {           
+            $this->db->insert_batch(TBL_BLOG_CONTENT, $data);
+        }
+        return TRUE;
+    }
+    
+    public function blog_content_data($bid) {
+        $sql = 'SELECT * FROM '.TBL_BLOG_CONTENT.' WHERE blog_id = "' . $bid . '" ORDER BY `order`';
+        if ($query = $this->db->query($sql)) {
+            return $query->result();
+        }
+        return FALSE;
+    }
 
 //    public function do_Login($data) {
 //        try {

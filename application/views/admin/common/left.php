@@ -17,7 +17,7 @@
             <li class="<?= ($class == 'home' && $method == 'enquiry') ? 'active' : '' ?>">
                 <?= anchor(base_url('admin/home/enquiry/' . STATUS_IN_ACTIVE), '<i class="fa fa-envelope"></i> <span>Enquiry</span>') ?>
             </li>
-			<li class="<?= ($class == 'home' && $method == 'applicationDetails') ? 'active' : '' ?>">
+            <li class="<?= ($class == 'home' && $method == 'applicationDetails') ? 'active' : '' ?>">
                 <?= anchor(base_url('admin/home/applicationDetails'), '<i class="fa fa-envelope"></i> <span>Application Details</span>') ?>
             </li>
             <li class="treeview <?= ((in_array($class, ['setting'])) && (in_array($method, ['index', 'banner', 'banner_ae','page', 'page_ae','app_type_ae','application_type','country','arrival_port','arrival_port_ae','form_banner']))) ? 'active' : '' ?>">  
@@ -46,6 +46,9 @@
                         <?= anchor(base_url('admin/setting/form_banner'), '<i class="fa fa-plane"></i> <span>Manage Form Banner</span>') ?>
                     </li>
                 </ul>
+            </li>
+            <li class="<?= ($class == 'home' && $method == 'blogs') ? 'active' : '' ?>">
+                <?= anchor(base_url('admin/home/blog'), '<i class="fa fa-envelope"></i> <span>Blogs</span>') ?>
             </li>
         </ul>
     </section>		

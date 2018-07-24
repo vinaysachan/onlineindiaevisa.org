@@ -21,4 +21,7 @@ define('TBL_COUNTRY', 'country');
 define('TBL_ARRIVAL_PORT', 'arrival_port');
 define('TBL_SETTING', 'setting');
 define('TBL_ERROR', 'error');
+define('TBL_BLOG', 'blog');
+define('TBL_BLOG_CONTENT', 'blog_content');
+
 

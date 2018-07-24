@@ -11,6 +11,7 @@
             </button>
             <div class="col-12 fs12">
                 <span><img src="<?= base_url('public/img/in.png') ?>" class="mr20" >IND <?= CONTACT_NO1 ?></span>
+                <span><img src="<?= base_url('public/img/uk.png') ?>" class="mr20" >UK <?= CONTACT_NO_UK ?></span>
                 <span class="ml25"><i class="fa fa-envelope fs20 mr10"></i><?= CONTACT_EMAIL1 ?></span>
             </div>
 

@@ -122,6 +122,8 @@ define('BANNER_FORM_PATH', './uploads/form_banner/');
 define('APPLICATION_IMG', './uploads/application_image/');
 define('PASSPORT_IMG', './uploads/passport/');
 define('CAPTCHA_PATH', './uploads/captcha/');
+define('BLOG_PATH', './uploads/blog/');
+define('BLOG_PATH_CONTENT', './uploads/blog_content/');
 
 define('SETTING_FORM_BANNER', 'form_banner');
 
@@ -133,4 +135,4 @@ define('ADMIN_EMAIL2', 'admin@onlineindiaevisa.org');
 define('CONTACT_EMAIL1', 'info@onlineindiaevisa.org');
 define('CONTACT_EMAIL2', 'contact@onlineindiaevisa.org');
 define('CONTACT_NO1', '+918802085751');
-define('CONTACT_NO_UK', 'CONTACT_NO2');
+define('CONTACT_NO_UK', '+448000488398');
