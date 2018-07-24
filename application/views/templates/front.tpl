@@ -5,6 +5,7 @@
         <?php /* Google Analytics */ $this->load->view('analyticstracking'); ?>
     </head>
     <body class="">
+        <?php /* Tawk Plugin */ $this->load->view('web_parts/tawk.to.php'); ?>
         <?php /* Top Menu */ $this->load->view('includes/front_header'); ?>
         <?php /* Top Haeder Part */ $this->load->view('includes/header'); ?>
         <div class="">
